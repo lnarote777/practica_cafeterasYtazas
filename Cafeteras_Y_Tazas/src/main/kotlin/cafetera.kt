@@ -21,6 +21,10 @@ class Cafetera(var ubicacion: String){
     fun servirTaza(){
 
     }
+    fun vaciar(){
+        this.cantidad = 0
+        return this.cantidad
+    }
 
     override fun toString(): String {
         return "Cafetera(ubicación = ${this.ubicacion}, capacidad = ${this.capacidad}c.c., cantidad = ${this.cantidad} )"

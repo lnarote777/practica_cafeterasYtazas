@@ -1,4 +1,4 @@
-class Taza(private var color: Color = Color.Blanco, private var capacidad: Int = 50, private var cantidad: Int = 0){
+class Taza(private var color: Color = Color.BLANCO, private var capacidad: Int = 50, private var cantidad: Int = 0){
 
     fun getColor(): Color {
         return this.color

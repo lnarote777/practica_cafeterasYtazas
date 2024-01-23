@@ -45,33 +45,33 @@ método para realizar operaciones similares pero con diferentes conjuntos de dat
 fun main() {
 
     //TODO: Crear 3 cafeteras en la Sala, Cocina y Oficina
-    val cafetera1 = Cafetera("Sala", 1000, 0 )
-    val cafetera2 = Cafetera("Cocina", 750, 750)
+    val cafetera1 = Cafetera("Sala" )
+    val cafetera2 = Cafetera("Cocina", 750)
     val cafetera3 = Cafetera("Oficina", 500, 200 )
 
     val cafeteras = listOf(cafetera1, cafetera2, cafetera3)
 
     //TODO: Crear una lista de 20 tazas con capacidades aleatorias
-    val taza1 = Taza(Color.Negro,75)
-    val taza2 = Taza(Color.Azul)
-    val taza3 = Taza(Color.GRIS, 50)
-    val taza4 = Taza()
-    val taza5 = Taza()
-    val taza6 = Taza()
-    val taza7 = Taza()
-    val taza8 = Taza()
-    val taza9 = Taza()
-    val taza10 = Taza()
-    val taza11 = Taza()
-    val taza12 = Taza()
-    val taza13 = Taza()
-    val taza14 = Taza()
-    val taza15 = Taza()
-    val taza16 = Taza()
-    val taza17 = Taza()
-    val taza18 = Taza()
-    val taza19 = Taza()
-    val taza20 = Taza()
+    val taza1 = Taza(Color.BLANCO,75)
+    val taza2 = Taza(Color.AZUL, 100)
+    val taza3 = Taza(Color.VERDE, 50)
+    val taza4 = Taza(Color.NEGRO, 100)
+    val taza5 = Taza(Color.BLANCO, 50)
+    val taza6 = Taza(Color.BLANCO, 50)
+    val taza7 = Taza(Color.AZUL, 50)
+    val taza8 = Taza(Color.AZUL, 75)
+    val taza9 = Taza(Color.VERDE, 100)
+    val taza10 = Taza(Color.VERDE, 75)
+    val taza11 = Taza(Color.NEGRO,100)
+    val taza12 = Taza(Color.NEGRO, 50)
+    val taza13 = Taza(Color.BLANCO, 100)
+    val taza14 = Taza(Color.BLANCO, 75)
+    val taza15 = Taza(Color.GRIS, 100)
+    val taza16 = Taza(Color.VERDE, 50)
+    val taza17 = Taza(Color.GRIS, 50)
+    val taza18 = Taza(Color.GRIS, 75)
+    val taza19 = Taza(Color.NEGRO, 100)
+    val taza20 = Taza(Color.BLANCO, 50)
 
     val tazas = listOf(taza1, taza2, taza3, taza4, taza5, taza6, taza7, taza8, taza9, taza10, taza11, taza12, taza13, taza14, taza15, taza16, taza17, taza18, taza19, taza20)
 
@@ -97,7 +97,7 @@ fun main() {
     cafetera1.llenar()
 
     //TODO: Vaciar la cafetera2.
-    cafetera2.cantidad = 0
+    cafetera2.vaciar()
 
     //TODO: Agregar café a la cafetera2 a la mitad de su capacidad.
     cafetera2.cantidad += (cafetera2.capacidad / 2)
@@ -143,5 +143,5 @@ fun main() {
 }
 
 enum class Color(){
-    Blanco, Negro, GRIS, Azul, VERDE
+    BLANCO, VERDE, AZUL, NEGRO, GRIS
 }
