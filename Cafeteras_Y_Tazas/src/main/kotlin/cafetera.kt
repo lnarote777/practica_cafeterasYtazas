@@ -21,9 +21,13 @@ class Cafetera(var ubicacion: String){
     fun servirTaza(){
 
     }
-    fun vaciar(){
+    fun vaciar(): Int {
         this.cantidad = 0
         return this.cantidad
+    }
+    fun agregarCafe(cc : Int){
+        cc = 200
+
     }
 
     override fun toString(): String {

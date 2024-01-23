@@ -100,10 +100,10 @@ fun main() {
     cafetera2.vaciar()
 
     //TODO: Agregar café a la cafetera2 a la mitad de su capacidad.
-    cafetera2.cantidad += (cafetera2.capacidad / 2)
+    cafetera2.agregarCafe()
 
     //TODO: Agregar 400 c.c. de café a la cafereta3
-    cafetera3.cantidad += 400
+    cafetera3.agregarCafe(400)
 
     println("**********************************************")
     //TODO: Mostrar por pantalla el contenido de las 3 cafeteras
